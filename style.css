@@ -63,6 +63,9 @@ nav ul li{
     text-align: center;
     transition: .2s ease-in;
 }
+.follow{
+    width: 180px;
+}
 nav ul li:hover{
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
@@ -186,6 +189,9 @@ nav ul li:hover{
     .banner-container,.funny-games-container{
         background: none;
         padding: 20px;
+    }
+    .btn{
+        padding: 13px 25px;
     }
     .banner-container{
         flex-direction: column-reverse;
