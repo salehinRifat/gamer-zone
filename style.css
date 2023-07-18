@@ -181,3 +181,36 @@ nav ul li:hover{
 
 
 
+/* Responsive Design */
+@media screen and (max-width:576px){
+    .banner-container,.funny-games-container{
+        background: none;
+        padding: 20px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        background: url(images/Group\ 14.png);
+        background-size: 482px 329px;
+        background-position: -100px 26px;
+        background-repeat: no-repeat;
+        padding: 50px;
+    }
+    nav, nav ul, .game-cards {
+        flex-direction: column;
+    }
+    .game-cards{
+        justify-content: center;
+        align-items: center;
+    }
+    .g-card{
+        margin-bottom: 100px;
+    }
+    nav ul li:first-child{
+        margin-top: 10px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+}
