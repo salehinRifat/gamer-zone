@@ -201,7 +201,7 @@ nav ul li:hover{
         background-size: 482px 329px;
         background-position: -100px 26px;
         background-repeat: no-repeat;
-        padding: 50px;
+        padding: 50px 30px;
     }
     nav, nav ul, .game-cards {
         flex-direction: column;
