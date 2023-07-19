@@ -394,10 +394,16 @@ nav ul li:hover{
     }
     .footer-contaier ul{
         line-height: 30px;
+        padding-left: 25px;
     }
     .footer-contaier{
         flex-direction: column;
         padding: 10px;
+    }
+}
+@media screen and (max-width:424px){
+    .footer-contaier ul{
+        padding-left: 60px;
     }
 }
 /* For Tablets */
