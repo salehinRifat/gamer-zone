@@ -281,6 +281,7 @@ nav ul li:hover{
     color: #fff;
     font-size: .9rem;
     margin: 0 30px;
+    cursor: pointer;
 }
 .footer-contaier ul li a{
     text-decoration: none;
