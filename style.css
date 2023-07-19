@@ -171,7 +171,6 @@ nav ul li:hover{
     border: 2px solid #FF42A5;
 }
 .overlay p{
-    margin-top: 10px;
     color: #FF42A5;
 }
 .g-card:hover .overlay {
@@ -224,7 +223,7 @@ nav ul li:hover{
     width: 100%;
 }
 .games-genres-container{
-    padding: 30px 150px;
+    padding: 80px 150px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .genres-container-1, .genres-container-2{
@@ -261,14 +260,61 @@ nav ul li:hover{
     display: none;
 }
 
+.footer-contaier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0B0223;
+    padding: 80px 150px;
+}
+.footer-logo  h1{
+    color: #fff;
+}
+.footer-contaier  ul{
+    display: flex;
+    margin-bottom: 30px;
+}
 
+.footer-contaier ul li{
+    list-style-type: none;
+    color: #fff;
+    font-size: .9rem;
+    margin: 0 30px;
+}
+.footer-contaier ul li a{
+    text-decoration: none;
+}
+.footer-contaier  ul li i{
+    font-size: 25px;
+    color: #fff;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer-logo img{
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+.footer-icons{
+    margin-top: 20px;
+}
+.terms{
+    margin-top: 30px;
+}
+.terms li{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: .8rem;
 
-
-
-
-
-
-
+}
+.footer-contaier p{
+    color:rgba(255, 255, 255, 0.60);
+    font-size: .8rem;
+}
 
 
 
@@ -341,8 +387,88 @@ nav ul li:hover{
     .genres h1{
         font-size: .7rem;
     }
+    .footer-contaier ul{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer-contaier ul{
+        line-height: 30px;
+    }
+    .footer-contaier{
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 /* For Tablets */
 @media screen and (min-width:576px) and (max-width:992px){
-
+    .banner-container,.funny-games-container,.instant-play-container,.games-genres-container{
+        background: none;
+        padding: 20px;
+    }
+    .btn{
+        padding: 13px 25px;
+    }
+    .banner-content{
+        background: url(images/Group\ 14.png);
+        background-size: 482px 329px;
+        background-position: -100px 26px;
+        background-repeat: no-repeat;
+        padding: 50px 30px;
+    }
+    nav, nav ul, .game-cards,.instant-play-container {
+        flex-direction: column;
+    }
+    .banner-container,.instant-play-container2{
+        flex-direction: column-reverse;
+    }
+    .game-cards{
+        justify-content: center;
+        align-items: center;
+    }
+    .g-card{
+        margin-bottom: 100px;
+    }
+    nav ul li:first-child{
+        margin-top: 10px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .instant-play-img{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .instant-play-img2{
+        width: 100px;
+        position: absolute;
+        left: -50px;
+        bottom: -47px;
+    }
+    .instant-play-content{
+        text-align: center;
+    }
+    .instant-play-content p{
+        margin-bottom: 20px;
+        padding: 20px 0;
+    }
+    .deskview{
+        display: none;
+    }
+    .mobileview{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-contaier ul{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer-contaier ul{
+        line-height: 30px;
+    }
+    .footer-contaier{
+        flex-direction: column;
+        padding: 10px;
+    }
 }
