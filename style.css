@@ -25,6 +25,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* Common Styles */
 nav{
     display: flex;
@@ -181,20 +182,105 @@ nav ul li:hover{
     margin-top: 10px;
     color: #534C64;
 }
+.instant-play-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 150px;
+}
+.instant-play-container2{
+    padding-top: 50px;
+}
+.instant-play-content{
+    text-align: right;
+    width: 300px;
+}
+.instant-play-content2{
+    text-align: left;
+}
+.instant-play-content h1{
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.instant-play-content p{
+    color: #534C64;
+}
+.instant-play-img{
+    width: 400px;
+    position: relative;
+}
+.instant-play-img img{
+    width: 100%;
+}
+.instant-play-img2{
+    width: 200px;
+    position: absolute;
+    left: -96px;
+    bottom: -47px;
+}
+.instant-play-img2 img{
+    width: 100%;
+}
+.games-genres-container{
+    padding: 30px 150px;
+}
+.genres-container-1, .genres-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.genres-container-2{
+    margin-top: 20px;
+}
+.genres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 8px 10px;
+    transition: .3s;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.genres:hover{
+    border: 1px solid #FF42A5;
+    color: #F948B2;
+}
+.genres img{
+    width: 35px;
+    margin-right: 10px;
+}
+.genres h1{
+    font-size: .9rem;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* Responsive Design */
+/* For Mobile Devices */
 @media screen and (max-width:576px){
-    .banner-container,.funny-games-container{
+    .banner-container,.funny-games-container,.instant-play-container,.games-genres-container{
         background: none;
         padding: 20px;
     }
     .btn{
         padding: 13px 25px;
-    }
-    .banner-container{
-        flex-direction: column-reverse;
     }
     .banner-content{
         background: url(images/Group\ 14.png);
@@ -203,8 +289,11 @@ nav ul li:hover{
         background-repeat: no-repeat;
         padding: 50px 30px;
     }
-    nav, nav ul, .game-cards {
+    nav, nav ul, .game-cards,.instant-play-container {
         flex-direction: column;
+    }
+    .banner-container,.instant-play-container2{
+        flex-direction: column-reverse;
     }
     .game-cards{
         justify-content: center;
@@ -219,4 +308,37 @@ nav ul li:hover{
     .banner-img img{
         width: 100%;
     }
+    .instant-play-img{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .instant-play-img2{
+        width: 100px;
+        position: absolute;
+        left: -50px;
+        bottom: -47px;
+    }
+    .instant-play-content{
+        text-align: center;
+    }
+    .instant-play-content p{
+        margin-bottom: 20px;
+        padding: 20px 0;
+    }
+    .games-genres-container{
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 50px 30px;
+    }
+    .genres img{
+        width: 20px;
+    }
+    .genres h1{
+        font-size: .7rem;
+    }
+}
+/* For Tablets */
+@media screen and (min-width:576px) and (max-width:992px){
+
 }
