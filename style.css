@@ -403,7 +403,7 @@ nav ul li:hover{
 }
 @media screen and (max-width:424px){
     .footer-contaier ul{
-        padding-left: 60px;
+        padding-left: 50px;
     }
 }
 /* For Tablets */
